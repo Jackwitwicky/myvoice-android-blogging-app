@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="landing_bg">
+        <item>@color/light_green</item>
+        <item>@color/light_purple</item>
+        <item>@color/light_orange</item>
+        <item>@color/light_cyan</item>
+        <item>@color/colorPrimaryDark</item>
+
+    </array>
+
+    <!--<array name="icons">
+        <item>@drawable/socialnetwork</item>
+        <item>@drawable/chat</item>
+        <item>@drawable/location</item>
+        <item>@drawable/phone</item>
+    </array>-->
+
+
+
+</resources>

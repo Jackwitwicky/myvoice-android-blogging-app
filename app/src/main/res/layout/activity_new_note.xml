@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.luvira.myvoice.NewNoteActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/new_note_header"
+        android:textStyle="bold"
+        android:id="@+id/newNoteHeader"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Note Category:"
+        android:id="@+id/categoryText"
+        android:layout_below="@+id/newNoteHeader"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/categorySpinner"
+        android:drawSelectorOnTop="true"
+        android:layout_alignBaseline="@id/categoryText"
+        android:layout_toRightOf="@+id/categoryText"
+        android:layout_toEndOf="@+id/categoryText"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/title_text"
+        android:id="@+id/titleText"
+        android:layout_below="@+id/categoryText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleEdit"
+        android:inputType="text"
+        android:ems="5"
+        android:layout_alignBottom="@+id/titleText"
+        android:layout_alignBaseline="@+id/titleText"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/titleText"
+        android:layout_alignRight="@+id/contentEdit"
+        android:layout_toEndOf="@+id/titleText"
+        android:layout_marginRight="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/content_text"
+        android:id="@+id/contentText"
+        android:layout_below="@+id/titleText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="14"
+        android:lines="3"
+        android:hint="@string/content_hint"
+        android:textSize="15sp"
+        android:id="@+id/contentEdit"
+        android:layout_below="@id/contentText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/saveNoteButton"
+        android:onClick="onClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contentEdit"
+        android:text="@string/save_note_button"/>
+
+
+</RelativeLayout>

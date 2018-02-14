@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.luvira.myvoice.EditProfileActivity">
+
+    <TextView
+        android:id="@+id/editProfileHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_profile_header"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/editWebsiteText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editProfileHeader"
+        android:layout_marginTop="15dp"
+        android:text="@string/website_text"
+        android:textSize="16sp"
+        />
+
+    <EditText
+        android:id="@+id/websiteEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editWebsiteText"
+        android:hint="@string/website_text_temp"/>
+
+    <TextView
+        android:id="@+id/aboutMeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/websiteEdit"
+        android:layout_marginTop="15dp"
+        android:text="@string/about_me_heading"
+        android:textSize="16sp"
+        />
+
+    <EditText
+        android:id="@+id/aboutMeEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aboutMeText"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:lines="4"
+        android:hint="@string/about_me_hint"/>
+
+    <Button
+        android:id="@+id/uploadPhotoButton"
+        android:onClick="onClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editProfileHeader"
+        android:text="@string/update_profile_pic"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:id="@+id/saveProfileButton"
+        android:onClick="onClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aboutMeEdit"
+        android:layout_marginTop="10dp"
+        android:text="save profile"/>
+
+
+</RelativeLayout>

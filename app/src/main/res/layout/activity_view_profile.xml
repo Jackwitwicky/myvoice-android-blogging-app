@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.luvira.myvoice.ViewProfileActivity">
+
+    <TextView
+        android:id="@+id/profileHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_header"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/profileCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileHeader"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="4dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/profileIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/join_chama"
+                android:layout_centerHorizontal="true"
+                 />
+            <TextView
+                android:id="@+id/usernameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/profileIcon"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp"
+                android:padding="10dp"
+                android:text="@string/username_form_hint"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/updateProfileButton"
+                android:onClick="onClick"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/usernameText"
+                android:text="@string/update_profile_button"
+                android:layout_margin="5dp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/about_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/profileCard"
+        android:text="@string/about_me_heading"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@+id/profileCard"
+        />
+
+    <TextView
+        android:id="@+id/aboutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_header"
+        android:paddingTop="15dp"
+        android:layout_alignLeft="@+id/about_header"
+        android:layout_alignParentRight="true"
+        android:text="@string/about_me_text"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/generalInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileCard"
+        android:layout_marginTop="20dp"
+        android:text="@string/general_info"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/viewEmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/generalInfo"
+        android:layout_marginTop="20dp"
+        android:text="@string/email_form_text"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/displayEmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/viewEmailText"
+        android:layout_toRightOf="@id/viewEmailText"
+        android:layout_alignLeft="@+id/websiteText"
+        android:text="@string/email_hint"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/viewWebsiteText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewEmailText"
+        android:layout_marginTop="10dp"
+        android:text="@string/website_text"/>
+
+    <TextView
+        android:id="@+id/websiteText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/viewWebsiteText"
+        android:layout_alignBaseline="@id/viewWebsiteText"
+        android:layout_marginLeft="10dp"
+        android:text="@string/website_text_temp"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

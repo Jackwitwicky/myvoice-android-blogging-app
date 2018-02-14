@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.luvira.myvoice.LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:text="@string/login_header"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:text="@string/login_text"
+        android:id="@+id/loginText"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/email_text"
+        android:id="@+id/emailText"
+        android:layout_below="@+id/loginText"
+        android:paddingTop="20dp"
+        android:layout_alignLeft="@+id/loginText"
+        android:layout_alignStart="@+id/loginText" />
+
+    <EditText
+        android:id="@+id/emailEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/emailText"
+        android:textSize="18dp"
+        android:hint="@string/email_hint"
+        android:layout_toRightOf="@+id/passwordText"
+        android:layout_toEndOf="@+id/passwordText"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/passwordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailText"
+        android:layout_alignLeft="@+id/emailText"
+        android:layout_marginTop="20dp"
+        android:text="@string/password_text"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/passwordEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/passwordText"
+        android:layout_alignBaseline="@+id/passwordText"
+        android:layout_alignRight="@+id/emailEdit"
+        android:layout_marginLeft="10dp"
+        android:textSize="18dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_button"
+        android:id="@+id/loginButton"
+        android:onClick="onClick"
+        android:layout_below="@+id/passwordText"
+        android:layout_alignLeft="@+id/passwordEdit"
+        android:layout_alignRight="@+id/passwordEdit"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up_description"
+        android:id="@+id/signUpDescription"
+        android:layout_below="@+id/loginButton"
+        android:layout_alignLeft="@+id/passwordText"
+        android:layout_alignStart="@+id/passwordText"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:onClick="onClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUpDescription"
+        android:layout_alignLeft="@+id/signUpDescription"
+        android:layout_marginTop="10dp"
+        android:text="@string/sign_up_button"/>
+
+
+</RelativeLayout>

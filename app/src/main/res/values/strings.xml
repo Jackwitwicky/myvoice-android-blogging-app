@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">My Voice</string>
+
+    <!--sliding tutorial text-->
+    <string name="start">Start</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="welcome_two">A platform that allows someone to cement their
+    thoughts into ones and zeros, from random thoughts to strong views they poses.</string>
+
+    <!--login activity-->
+    <string name="login_header">My Voice Portal</string>
+    <string name="login_text">Login</string>
+    <string name="email_text">Email:</string>
+    <string name="email_hint">john@doe.com</string>
+    <string name="password_text">Password:</string>
+    <string name="login_button">Login</string>
+
+    <string name="sign_up_description">Yet to register your voice?</string>
+    <string name="sign_up_button">Sign Up</string>
+
+    <!--sign up activity-->
+    <string name="sign_up_header">Enter your details</string>
+    <string name="sign_up_sub_header">(Join tons of other My Voice users)</string>
+
+    <string name="username_form_text">Username:</string>
+    <string name="username_form_hint">John Doe</string>
+    <string name="email_form_text">Email:</string>
+    <string name="password_form_text">Password:</string>
+    <string name="password_confirm_form_text">Confirm Password:</string>
+
+    <!--category activity-->
+    <string name="category_header">Browse the various Note Categories</string>
+    <string name="social_text">Social</string>
+    <string name="social_desc">These are social notes</string>
+    <string name="tech_text">Technology</string>
+    <string name="tech_desc">These are technology notes</string>
+    <string name="political_text">Political</string>
+    <string name="political_desc">These are political notes</string>
+    <string name="gender_text">Gender</string>
+    <string name="gender_desc">These are gender notes</string>
+    <string name="religion_text">Religion</string>
+    <string name="religion_desc">These are religion notes</string>
+    <string name="art_text">Art</string>
+    <string name="art_desc">These are art notes</string>
+    <string name="history_text">History</string>
+    <string name="history_desc">These are history notes</string>
+    <string name="vanity_text">Vanity</string>
+    <string name="vanity_desc">These are vanity notes</string>
+
+    <!--view profile activity-->
+    <string name="profile_header">Profile</string>
+    <string name="user_name_temp">John Doe</string>
+    <string name="about_me_heading">About Me</string>
+    <string name="about_me_text">My name is John Doe. I have not updated my bio.
+        If I had updated my profile it would be displayed here. Do not be like me.</string>
+    <string name="update_profile_button">Update Profile</string>
+
+    <string name="general_info">General Info</string>
+    <string name="website_text">Website:</string>
+    <string name="website_text_temp">www.Iamblank.com</string>
+
+    <!--edit profile activity-->
+    <string name="edit_profile_header">Edit Your Profile</string>
+    <string name="update_profile_pic">Upload photo</string>
+    <string name="about_me_hint">Enter your bio here. Don\'t be shy, we won\'t tell if you don\'t</string>
+
+    <!--new note activity-->
+    <string name="new_note_header">Add New Note</string>
+    <string name="title_text">Title</string>
+    <string name="content_text">Content</string>
+    <string name="content_hint">(Express yourself)</string>
+    <string name="save_note_button">Save Note</string>
+
+    <!--view note activity-->
+    <string name="content_owner">John Doe</string>
+    <string name="content_temp">I guess this is the place where I tell you about this blog and what it is.
+    A corner of the wider web, nay it\'s a home where we occasionally meet and share
+    stories that make you laugh, or leisurely nod your head as you go "Yeah, me too!"
+    as you read along to a post that familiarizes with you. A place where we can all come
+    to blow off some steam and forget the world out there, form a community of like minded
+    peeps,a family, if I may be so bold.</string>
+
+    <string name="comment_header">Comments</string>
+    <string name="add_comment_header">Add your comment</string>
+    <string name="save_comment_button">Post Comment</string>
+
+    <!--comment item-->
+    <string name="comment_content">This is a sample comment for a note. It is slightly long
+    to display how it would appear if a user made a long comment</string>
+    <string name="comment_owner">By John Doe</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">It appears this category does not have a note</string>
+    <string name="be_first_button">Be The First</string>
+</resources>
+
+
+
+
+
+
